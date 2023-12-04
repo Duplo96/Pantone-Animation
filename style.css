@@ -1,0 +1,45 @@
+.pantone .red {
+  background-color: red;
+  transform: rotate(-50deg);
+}
+.pantone .orange {
+  background-color: orange;
+  transform: rotate(-30deg);
+}
+
+.pantone .yellow {
+  background-color: yellow;
+  transform: rotate(-10deg);
+}
+.pantone .green {
+  background-color: green;
+  transform: rotate(10deg);
+}
+.pantone .blue {
+  background-color: blue;
+  transform: rotate(30deg);
+}
+.pantone .purple {
+  background-color: purple;
+  transform: rotate(45deg);
+}
+.pantone > div {
+  width: 100px;
+  height: 300px;
+  position: absolute;
+  border-radius: 5px;
+  transform-origin: bottom;
+  animation: animazione 2s;
+  box-shadow: 9px 0px 6px 0px rgb(0, 0, 0, 0.45);
+  -webkit-box-shadow: 9px 0px 6px 0px rgb(0, 0, 0, 0.45);
+}
+.pantone {
+  position: relative;
+  margin: 200px 500px;
+}
+
+@keyframes animazione {
+  to {
+    transform: rotate(0deg);
+  }
+}
